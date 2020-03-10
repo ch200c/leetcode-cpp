@@ -4,6 +4,9 @@
 namespace problem_1_memory {
 class Solution {
 public:
+  // Runtime: 148 ms, faster than 24.68% of C++ online submissions for Two Sum.
+  // Memory Usage: 8.7 MB, less than 100.00% of C++ online submissions for Two
+  // Sum.
   std::vector<int> twoSum(const std::vector<int> &nums, int target) const
       noexcept {
 
