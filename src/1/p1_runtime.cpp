@@ -3,7 +3,7 @@
 #include <unordered_set> // std::unordered_set
 #include <vector>        // std::vector
 
-namespace problem_1_runtime {
+namespace p1_runtime {
 class Solution {
 public:
   // Runtime: 8 ms, faster than 93.09% of C++ online submissions for Two Sum.
@@ -40,10 +40,10 @@ public:
     return answer_indices;
   }
 };
-} // namespace problem_1_runtime
+} // namespace p1_runtime
 
 TEST_CASE("Problem 1 (Runtime)") {
-  problem_1_runtime::Solution solution;
+  p1_runtime::Solution solution;
   auto result{solution.twoSum(std::vector<int>{2, 7, 11, 15}, 9)};
 
   REQUIRE(std::find(result.cbegin(), result.cend(), 0) != result.cend());

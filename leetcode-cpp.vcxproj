@@ -149,9 +149,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="src\1\memory_usage.cpp" />
-    <ClCompile Include="src\1\runtime.cpp" />
-    <ClCompile Include="src\2\wip.cpp" />
+    <ClCompile Include="src\1\p1_memory_usage.cpp" />
+    <ClCompile Include="src\1\p1_runtime.cpp" />
+    <ClCompile Include="src\2\p2_runtime.cpp" />
     <ClCompile Include="src\main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

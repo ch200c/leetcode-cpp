@@ -1,6 +1,8 @@
 #include "catch2/catch.hpp"
 #include <vector> // std::vector
 
+namespace p2_runtime {
+
 struct ListNode {
   int val;
   ListNode *next;
@@ -30,7 +32,7 @@ public:
     return root_node;
   }
 
-  // Runtime: 24 ms, faster than 90.33% of C++ online submissions for Add Two
+  // Runtime: 20 ms, faster than 98.02% of C++ online submissions for Add Two
   // Numbers. Memory Usage: 11.6 MB, less than 5.14% of C++ online submissions
   // for Add Two Numbers.
   ListNode *addTwoNumbers(ListNode *l1, ListNode *l2) const noexcept {
@@ -66,21 +68,22 @@ public:
     return to_list(result_digits);
   }
 };
+} // namespace p2_runtime
 
 TEST_CASE("Problem 2") {
 
-  Solution solution;
+  p2_runtime::Solution solution;
 
-  auto root_node_1{Solution::to_list(std::vector<int>{2, 4, 3})};
-  auto root_node_2{Solution::to_list(std::vector<int>{5, 6, 4})};
+  auto root_node_1{p2_runtime::Solution::to_list(std::vector<int>{2, 4, 3})};
+  auto root_node_2{p2_runtime::Solution::to_list(std::vector<int>{5, 6, 4})};
   auto result{solution.addTwoNumbers(root_node_1, root_node_2)};
 
   REQUIRE(result->val == 7);
   REQUIRE(result->next->val == 0);
   REQUIRE(result->next->next->val == 8);
 
-  root_node_1 = Solution::to_list(std::vector<int>{1, 8});
-  root_node_2 = Solution::to_list(std::vector<int>{0});
+  root_node_1 = p2_runtime::Solution::to_list(std::vector<int>{1, 8});
+  root_node_2 = p2_runtime::Solution::to_list(std::vector<int>{0});
   result = solution.addTwoNumbers(root_node_1, root_node_2);
 
   REQUIRE(result->val == 1);

@@ -2,7 +2,7 @@
 #include <algorithm> // std::find
 #include <vector>    // std::vector
 
-namespace problem_1_memory {
+namespace p1_memory {
 class Solution {
 public:
   // Runtime: 148 ms, faster than 24.68% of C++ online submissions for Two Sum.
@@ -24,10 +24,10 @@ public:
     return std::vector<int>{};
   }
 };
-} // namespace problem_1_memory
+} // namespace p1_memory
 
 TEST_CASE("Problem 1 (Memory Usage)") {
-  problem_1_memory::Solution solution;
+  p1_memory::Solution solution;
   auto result{solution.twoSum(std::vector<int>{2, 7, 11, 15}, 9)};
 
   REQUIRE(std::find(result.cbegin(), result.cend(), 0) != result.cend());
