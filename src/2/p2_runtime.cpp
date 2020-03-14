@@ -1,4 +1,5 @@
 #include "catch2/catch.hpp"
+#include "leetcode-cpp/common.h"
 #include <vector> // std::vector
 
 namespace p2_runtime {
@@ -71,21 +72,22 @@ public:
 } // namespace p2_runtime
 
 TEST_CASE("Problem 2") {
+  if (enable_problem_2_tests) {
+    p2_runtime::Solution solution;
 
-  p2_runtime::Solution solution;
+    auto root_node_1{p2_runtime::Solution::to_list(std::vector<int>{2, 4, 3})};
+    auto root_node_2{p2_runtime::Solution::to_list(std::vector<int>{5, 6, 4})};
+    auto result{solution.addTwoNumbers(root_node_1, root_node_2)};
 
-  auto root_node_1{p2_runtime::Solution::to_list(std::vector<int>{2, 4, 3})};
-  auto root_node_2{p2_runtime::Solution::to_list(std::vector<int>{5, 6, 4})};
-  auto result{solution.addTwoNumbers(root_node_1, root_node_2)};
+    REQUIRE(result->val == 7);
+    REQUIRE(result->next->val == 0);
+    REQUIRE(result->next->next->val == 8);
 
-  REQUIRE(result->val == 7);
-  REQUIRE(result->next->val == 0);
-  REQUIRE(result->next->next->val == 8);
+    root_node_1 = p2_runtime::Solution::to_list(std::vector<int>{1, 8});
+    root_node_2 = p2_runtime::Solution::to_list(std::vector<int>{0});
+    result = solution.addTwoNumbers(root_node_1, root_node_2);
 
-  root_node_1 = p2_runtime::Solution::to_list(std::vector<int>{1, 8});
-  root_node_2 = p2_runtime::Solution::to_list(std::vector<int>{0});
-  result = solution.addTwoNumbers(root_node_1, root_node_2);
-
-  REQUIRE(result->val == 1);
-  REQUIRE(result->next->val == 8);
+    REQUIRE(result->val == 1);
+    REQUIRE(result->next->val == 8);
+  }
 }

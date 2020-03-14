@@ -1,4 +1,5 @@
 #include "catch2/catch.hpp"
+#include "leetcode-cpp/common.h"
 #include <algorithm>     // std::find
 #include <unordered_set> // std::unordered_set
 #include <vector>        // std::vector
@@ -43,9 +44,11 @@ public:
 } // namespace p1_runtime
 
 TEST_CASE("Problem 1 (Runtime)") {
-  p1_runtime::Solution solution;
-  auto result{solution.twoSum(std::vector<int>{2, 7, 11, 15}, 9)};
+  if (enable_problem_1_tests) {
+    p1_runtime::Solution solution;
+    auto result{solution.twoSum(std::vector<int>{2, 7, 11, 15}, 9)};
 
-  REQUIRE(std::find(result.cbegin(), result.cend(), 0) != result.cend());
-  REQUIRE(std::find(result.cbegin(), result.cend(), 1) != result.cend());
+    REQUIRE(std::find(result.cbegin(), result.cend(), 0) != result.cend());
+    REQUIRE(std::find(result.cbegin(), result.cend(), 1) != result.cend());
+  }
 }
