@@ -33,6 +33,9 @@
     <ClCompile Include="src\3\p3_simple.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\4\p4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\leetcode-cpp\common.h">
