@@ -5,6 +5,11 @@
 namespace p3_simple {
 class Solution {
 public:
+  // Runtime: 808 ms, faster than 6.97% of C++ online submissions for Longest
+  // Substring Without Repeating Characters.
+  // Memory Usage: 231.6 MB, less than 7.46% of C++ online submissions for Longest
+  // Substring Without Repeating Characters.
+  
   int lengthOfLongestSubstring(const std::string &s) const noexcept {
 
     std::vector<int> counts;
