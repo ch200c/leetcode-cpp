@@ -1,6 +1,5 @@
 #include "catch2/catch.hpp"
 #include "leetcode-cpp/common.h"
-#include <algorithm>     // std::find
 #include <unordered_set> // std::unordered_set
 #include <vector>        // std::vector
 
