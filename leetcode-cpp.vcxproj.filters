@@ -18,27 +18,42 @@
     <ClCompile Include="src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\2\p2_runtime.cpp">
+    <ClCompile Include="src\1\p1_simple_solution.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\1\p1_runtime.cpp">
+    <ClCompile Include="src\1\p1_runtime_solution.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\1\p1_memory_usage.cpp">
+    <ClCompile Include="src\2\p2_runtime_solution.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\3\p3.cpp">
+    <ClCompile Include="src\3\p3_runtime_solution.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\3\p3_simple.cpp">
+    <ClCompile Include="src\3\p3_simple_solution.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\4\p4.cpp">
+    <ClCompile Include="src\4\p4_simple_solution.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="include\leetcode-cpp\common.h">
+    <ClInclude Include="include\leetcode-cpp\1\p1_runtime_solution.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\leetcode-cpp\1\p1_simple_solution.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\leetcode-cpp\2\p2_runtime_solution.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\leetcode-cpp\3\p3_runtime_solution.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\leetcode-cpp\3\p3_simple_solution.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\leetcode-cpp\4\p4_simple_solution.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
