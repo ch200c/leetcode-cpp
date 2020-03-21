@@ -19,20 +19,8 @@ Solution::findMedianSortedArrays(const std::vector<int> &nums1,
 
   it1 = _nums1.cbegin();
   it2 = _nums2.cbegin();
-
-  if (_nums1.empty()) {
-    is_current_it_nums1 = false;
-  } else if (_nums2.empty()) {
-    is_current_it_nums1 = true;
-  } else {
-
-    if (*it1 < *it2) {
-      is_current_it_nums1 = true;
-    } else {
-      is_current_it_nums1 = false;
-    }
-  }
-
+  is_current_it_nums1 =
+      _nums2.empty() || !_nums2.empty() && !nums1.empty() && *it1 < *it2;
   index = 0;
 
   while (index != median_index) {
@@ -42,7 +30,12 @@ Solution::findMedianSortedArrays(const std::vector<int> &nums1,
   if (is_odd) {
     return is_current_it_nums1 ? *it1 : *it2;
   } else {
-    return next_it_average(is_current_it_nums1 ? it1 : it2);
+    auto old_it{is_current_it_nums1 ? it1 : it2};
+    advance_iterator();
+
+    return (static_cast<double>(*old_it) +
+            (is_current_it_nums1 ? *it1 : *it2)) /
+           2.0; // C26451
   }
 }
 
@@ -54,38 +47,30 @@ void Solution::advance_iterator() noexcept {
     if (next_it == _nums1.cend()) {
       is_current_it_nums1 = false;
     } else {
-
       if (it2 == _nums2.cend()) {
-
         it1 = next_it;
         is_current_it_nums1 = true;
-
       } else {
         if (*next_it < *it2) {
           it1 = next_it;
           is_current_it_nums1 = true;
         } else {
-
           is_current_it_nums1 = false;
         }
       }
     }
   } else {
-
     if (next_it == _nums2.cend()) {
       is_current_it_nums1 = true;
     } else {
-
       if (it1 == _nums1.cend()) {
         it2 = next_it;
         is_current_it_nums1 = false;
       } else {
-
         if (*next_it < *it1) {
           it2 = next_it;
           is_current_it_nums1 = false;
         } else {
-
           is_current_it_nums1 = true;
         }
       }
@@ -93,14 +78,6 @@ void Solution::advance_iterator() noexcept {
   }
 
   index++;
-}
-
-double
-Solution::next_it_average(const std::vector<int>::const_iterator &it) noexcept {
-  auto old_it{it};
-  advance_iterator();
-  return (static_cast<double>(*old_it) + (is_current_it_nums1 ? *it1 : *it2)) /
-         2.0; // C26451
 }
 
 } // namespace p4_simple

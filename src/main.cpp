@@ -88,10 +88,9 @@ TEST_CASE("Problem 4") {
                              std::vector<int>{1, 3}, std::vector<int>{2})) <=
           epsilon);
 
-      REQUIRE(std::abs(-1.0 - solution.findMedianSortedArrays(
+  REQUIRE(std::abs(-1.0 - solution.findMedianSortedArrays(
                               std::vector<int>{3}, std::vector<int>{-2, -1})) <=
           epsilon);
-
 
   REQUIRE(std::abs(2.5 - solution.findMedianSortedArrays(
                              std::vector<int>{1, 2}, std::vector<int>{3, 4})) <=
@@ -100,7 +99,6 @@ TEST_CASE("Problem 4") {
   REQUIRE(std::abs(1.0 - solution.findMedianSortedArrays(std::vector<int>{1},
                                                          std::vector<int>{})) <=
           epsilon);
-
 
   REQUIRE(std::abs(1.0 - solution.findMedianSortedArrays(
                              std::vector<int>{}, std::vector<int>{1})) <=
@@ -114,5 +112,9 @@ TEST_CASE("Problem 4") {
                                                          std::vector<int>{})) <=
           epsilon);
 
+  // todo
 
+  REQUIRE(std::abs(1.5 - solution.findMedianSortedArrays(
+                             std::vector<int>{1, 2},
+                             std::vector<int>{-1, 3})) <= epsilon);
 }
