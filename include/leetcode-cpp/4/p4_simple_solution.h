@@ -12,12 +12,12 @@ private:
   // Caches the iterator, advances current iterator and returns the average
   // between them.
   double next_it_average(const std::vector<int>::const_iterator &it) noexcept;
-
+  bool is_current_it_nums1;
   std::vector<int> _nums1;
   std::vector<int> _nums2;
   std::vector<int>::const_iterator it1;
   std::vector<int>::const_iterator it2;
-  std::vector<int>::const_iterator current_it;
+  //std::vector<int>::const_iterator current_it;
   int index;
 };
 } // namespace p4_simple

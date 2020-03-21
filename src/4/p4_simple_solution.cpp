@@ -20,39 +20,75 @@ Solution::findMedianSortedArrays(const std::vector<int> &nums1,
   it1 = _nums1.cbegin();
   it2 = _nums2.cbegin();
 
-  if (!median_index) {
-    if (is_odd) {
-      return nums1.empty() ? *it2 : *it1;
+  if (_nums1.empty()) {
+    is_current_it_nums1 = false;
+  } else if (_nums2.empty()) {
+    is_current_it_nums1 = true;
+  } else {
+
+    if (*it1 < *it2) {
+      is_current_it_nums1 = true;
     } else {
-      return next_it_average(nums1.empty() ? it2 : it1);
+      is_current_it_nums1 = false;
     }
   }
 
-  current_it = it2;
-  index = 1;
+  index = 0;
 
   while (index != median_index) {
     advance_iterator();
   }
 
-  return is_odd ? *current_it : next_it_average(current_it);
+  if (is_odd) {
+    return is_current_it_nums1 ? *it1 : *it2;
+  } else {
+    return next_it_average(is_current_it_nums1 ? it1 : it2);
+  }
 }
 
 void Solution::advance_iterator() noexcept {
 
-  if (it1 == _nums1.cend()) {
-    it2 = std::next(it2);
-    current_it = it2;
-  } else if (it2 == _nums2.cend()) {
-    it1 = std::next(it1);
-    current_it = it1;
-  } else {
-    if (*it1 < *it2) {
-      it1 = std::next(it1);
-      current_it = it1;
+  auto next_it{is_current_it_nums1 ? std::next(it1) : std::next(it2)};
+
+  if (is_current_it_nums1) {
+    if (next_it == _nums1.cend()) {
+      is_current_it_nums1 = false;
     } else {
-      it2 = std::next(it2);
-      current_it = it2;
+
+      if (it2 == _nums2.cend()) {
+
+        it1 = next_it;
+        is_current_it_nums1 = true;
+
+      } else {
+        if (*next_it < *it2) {
+          it1 = next_it;
+          is_current_it_nums1 = true;
+        } else {
+
+          is_current_it_nums1 = false;
+        }
+      }
+    }
+  } else {
+
+    if (next_it == _nums2.cend()) {
+      is_current_it_nums1 = true;
+    } else {
+
+      if (it1 == _nums1.cend()) {
+        it2 = next_it;
+        is_current_it_nums1 = false;
+      } else {
+
+        if (*next_it < *it1) {
+          it2 = next_it;
+          is_current_it_nums1 = false;
+        } else {
+
+          is_current_it_nums1 = true;
+        }
+      }
     }
   }
 
@@ -63,7 +99,8 @@ double
 Solution::next_it_average(const std::vector<int>::const_iterator &it) noexcept {
   auto old_it{it};
   advance_iterator();
-  return (static_cast<double>(*old_it) + *current_it) / 2.0; // C26451
+  return (static_cast<double>(*old_it) + (is_current_it_nums1 ? *it1 : *it2)) /
+         2.0; // C26451
 }
 
 } // namespace p4_simple
