@@ -112,9 +112,11 @@ TEST_CASE("Problem 4") {
                                                          std::vector<int>{})) <=
           epsilon);
 
-  // todo
-
   REQUIRE(std::abs(1.5 - solution.findMedianSortedArrays(
                              std::vector<int>{1, 2},
                              std::vector<int>{-1, 3})) <= epsilon);
+
+  REQUIRE(std::abs(1.5 - solution.findMedianSortedArrays(
+                             std::vector<int>{1, 2}, std::vector<int>{1, 1})) <=
+          epsilon);
 }

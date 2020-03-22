@@ -19,7 +19,7 @@ Solution::findMedianSortedArrays(const std::vector<int> &nums1,
 
   it1 = _nums1.cbegin();
   it2 = _nums2.cbegin();
-  is_current_it_nums1 =
+  is_current_it1 =
       _nums2.empty() || !_nums2.empty() && !nums1.empty() && *it1 < *it2;
   index = 0;
 
@@ -28,50 +28,53 @@ Solution::findMedianSortedArrays(const std::vector<int> &nums1,
   }
 
   if (is_odd) {
-    return is_current_it_nums1 ? *it1 : *it2;
+    return is_current_it1 ? *it1 : *it2;
   } else {
-    auto old_it{is_current_it_nums1 ? it1 : it2};
+    auto old_it{is_current_it1 ? it1 : it2};
     advance_iterator();
 
-    return (static_cast<double>(*old_it) +
-            (is_current_it_nums1 ? *it1 : *it2)) /
+    return (static_cast<double>(*old_it) + (is_current_it1 ? *it1 : *it2)) /
            2.0; // C26451
   }
 }
 
 void Solution::advance_iterator() noexcept {
 
-  auto next_it{is_current_it_nums1 ? std::next(it1) : std::next(it2)};
+  auto next_it{is_current_it1 ? std::next(it1) : std::next(it2)};
 
-  if (is_current_it_nums1) {
+  if (is_current_it1) {
     if (next_it == _nums1.cend()) {
-      is_current_it_nums1 = false;
+      is_current_it1 = false;
     } else {
       if (it2 == _nums2.cend()) {
         it1 = next_it;
-        is_current_it_nums1 = true;
+        is_current_it1 = true;
       } else {
-        if (*next_it < *it2) {
+        if (is_it2_ignored || !is_it2_ignored && *next_it < *it2) {
           it1 = next_it;
-          is_current_it_nums1 = true;
+          is_current_it1 = true;
+          is_it1_ignored = false;
         } else {
-          is_current_it_nums1 = false;
+          is_current_it1 = false;
+          is_it1_ignored = true;
         }
       }
     }
   } else {
     if (next_it == _nums2.cend()) {
-      is_current_it_nums1 = true;
+      is_current_it1 = true;
     } else {
       if (it1 == _nums1.cend()) {
         it2 = next_it;
-        is_current_it_nums1 = false;
+        is_current_it1 = false;
       } else {
-        if (*next_it < *it1) {
+        if (is_it1_ignored || !is_it1_ignored && *next_it < *it1) {
           it2 = next_it;
-          is_current_it_nums1 = false;
+          is_current_it1 = false;
+          is_it2_ignored = false;
         } else {
-          is_current_it_nums1 = true;
+          is_current_it1 = true;
+          is_it2_ignored = true;
         }
       }
     }
