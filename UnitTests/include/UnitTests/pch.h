@@ -10,4 +10,6 @@
 // add headers that you want to pre-compile here
 #include <algorithm>
 #include <vector>
+#include <iterator>
+#include <string>
 #endif //PCH_H

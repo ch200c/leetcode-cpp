@@ -1,5 +1,6 @@
+#include "pch.h"
 #include "leetcode-cpp/p2/p2_solution.h"
-#include <vector> // std::vector
+
 namespace leetcode {
     namespace p2 {
 
@@ -24,9 +25,8 @@ namespace leetcode {
             return root_node;
         }
 
-        // Runtime: 20 ms, faster than 98.02% of C++ online submissions for Add Two
-        // Numbers. Memory Usage: 11.6 MB, less than 5.14% of C++ online submissions
-        // for Add Two Numbers.
+        // Runtime: 20 ms (98.02%)
+        // Memory Usage: 11.6 MB (5.14%)
         ListNode* Solution::addTwoNumbers(ListNode* l1, ListNode* l2) const noexcept {
 
             std::vector<int> result_digits;

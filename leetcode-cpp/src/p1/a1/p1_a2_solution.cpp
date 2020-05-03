@@ -1,14 +1,13 @@
+#include "pch.h"
 #include "leetcode-cpp/p1/a2/p1_a2_solution.h"
 
-#include <unordered_set> // std::unordered_set
-#include <vector>        // std::vector
+
 namespace leetcode {
 namespace p1 {
 namespace a2 {
 
-// Runtime: 8 ms, faster than 93.09% of C++ online submissions for Two Sum.
-// Memory Usage: 9.3 MB, less than 78.47% of C++ online submissions for Two
-// Sum.
+// Runtime: 8 ms (93.09%)
+// Memory Usage: 9.3 MB (78.47%)
 std::vector<int> Solution::twoSum(const std::vector<int> &nums,
                                   int target) const noexcept {
 

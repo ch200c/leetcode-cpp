@@ -1,15 +1,13 @@
+#include "pch.h"
 #include "leetcode-cpp/p3/a2/p3_a2_solution.h"
-#include <algorithm>    // std::max
-#include <string>        // std::string
-#include <unordered_map> // std::unordered_map
+
+
 namespace leetcode {
     namespace p3 {
         namespace a2 {
 
-            // Runtime: 20 ms, faster than 63.39% of C++ online submissions for Longest
-            // Substring Without Repeating Characters.
-            // Memory Usage: 10 MB, less than 73.13% of C++ online submissions for Longest
-            // Substring Without Repeating Characters.
+            // Runtime: 20 ms (63.39%)
+            // Memory Usage: 10 MB (73.13%)
             int Solution::lengthOfLongestSubstring(const std::string& s) const noexcept {
 
                 std::unordered_map<char, int> letter_to_last_index;

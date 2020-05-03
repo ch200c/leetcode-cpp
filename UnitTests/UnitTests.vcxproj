@@ -93,7 +93,7 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <WarningLevel>Level4</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>$(SolutionDir)leetcode-cpp\include;$(ProjectDir);$(VCInstallDir)UnitTest\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)leetcode-cpp\include;$(ProjectDir);$(VCInstallDir)UnitTest\include;include/UnitTests;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <UseFullPaths>true</UseFullPaths>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
@@ -158,26 +158,27 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\p1431\p1431_test.cpp" />
     <ClCompile Include="src\p1\a1\p1_a1_test.cpp" />
-    <ClCompile Include="pch.cpp">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
-    </ClCompile>
     <ClCompile Include="src\p1\a2\p1_a2_test.cpp" />
+    <ClCompile Include="src\p278\p278_test.cpp" />
     <ClCompile Include="src\p2\p2_test.cpp" />
+    <ClCompile Include="src\p383\a1\p383_a1_test.cpp" />
+    <ClCompile Include="src\p383\a2\p383_a2_test.cpp" />
+    <ClCompile Include="src\p383\a3\p383_a3_test.cpp" />
     <ClCompile Include="src\p3\a1\p3_a1_test.cpp" />
     <ClCompile Include="src\p3\a2\p3_a2_test.cpp" />
+    <ClCompile Include="src\p771\p771_test.cpp" />
+    <ClCompile Include="src\pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="pch.h" />
+    <ClInclude Include="include\UnitTests\pch.h" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\leetcode-cpp\leetcode-cpp.vcxproj">
       <Project>{4b304c51-f43c-4482-84db-15b2ae7635a3}</Project>
-      <Private>true</Private>
-      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
