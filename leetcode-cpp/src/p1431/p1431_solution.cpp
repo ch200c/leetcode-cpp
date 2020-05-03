@@ -1,7 +1,6 @@
 #include "pch.h"
 #include "leetcode-cpp/p1431/p1431_solution.h"
 
-
 namespace leetcode {
 namespace p1431 {
 // Runtime: 4 ms

@@ -1,5 +1,4 @@
 #include "pch.h"
-
 #include "leetcode-cpp/p278/p278_solution.h"
 
 namespace leetcode {

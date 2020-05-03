@@ -12,7 +12,6 @@ namespace tests
 		TEST_METHOD(test1)
 		{
 			auto solution{ leetcode::p383::a1::Solution() };
-
 			auto result{ solution.canConstruct("a","b") };
 			Assert::IsFalse(result);
 		}
@@ -30,11 +29,10 @@ namespace tests
 			Assert::IsTrue(result);
 		}
 
-		TEST_METHOD(test4) { 
-                  auto solution{leetcode::p383::a1::Solution()};
-                  auto result{solution.canConstruct("bjaajgea", "affhiiicabhbdchbidghccijjbfjfhjeddgggbajhidhjchiedhdibgeaecffbbbefiabjdhggihccec")};
-                  Assert::IsTrue(result);
-
+		TEST_METHOD(test4) {
+			auto solution{ leetcode::p383::a1::Solution() };
+			auto result{ solution.canConstruct("bjaajgea", "affhiiicabhbdchbidghccijjbfjfhjeddgggbajhidhjchiedhdibgeaecffbbbefiabjdhggihccec") };
+			Assert::IsTrue(result);
 		}
 	};
 }

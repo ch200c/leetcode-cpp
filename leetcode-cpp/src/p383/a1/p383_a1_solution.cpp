@@ -1,7 +1,6 @@
 #include "pch.h"
 #include "leetcode-cpp/p383/a1/p383_a1_solution.h"
 
-
 namespace leetcode {
 namespace p383 {
 namespace a1 {

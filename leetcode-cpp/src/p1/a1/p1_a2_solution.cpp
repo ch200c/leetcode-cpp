@@ -1,7 +1,6 @@
 #include "pch.h"
 #include "leetcode-cpp/p1/a2/p1_a2_solution.h"
 
-
 namespace leetcode {
 namespace p1 {
 namespace a2 {
@@ -39,6 +38,5 @@ std::vector<int> Solution::twoSum(const std::vector<int> &nums,
   return answer_indices;
 }
 } // namespace a2
-
 } // namespace p1
 } // namespace leetcode

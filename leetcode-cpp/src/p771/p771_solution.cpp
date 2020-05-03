@@ -1,7 +1,6 @@
 #include "pch.h"
 #include "leetcode-cpp/p771/p771_solution.h"
 
-
 namespace leetcode {
 namespace p771 {
 // Runtime: 8 ms
