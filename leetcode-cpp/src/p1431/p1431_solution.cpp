@@ -1,11 +1,11 @@
 #include "pch.h"
+
 #include "leetcode-cpp/p1431/p1431_solution.h"
 
 namespace leetcode {
 namespace p1431 {
 // Runtime: 4 ms
 // Memory Usage: 9.2 MB
-
 std::vector<bool> Solution::kidsWithCandies(std::vector<int> &candies,
                                             int extraCandies) const noexcept {
 

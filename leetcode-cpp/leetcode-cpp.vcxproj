@@ -155,6 +155,8 @@ exit 0</Command>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\p1431\p1431_solution.cpp" />
+    <ClCompile Include="src\p1432\p1432_solution.cpp" />
+    <ClCompile Include="src\p1433\p1433_solution.cpp" />
     <ClCompile Include="src\p1\a2\p1_a1_solution.cpp" />
     <ClCompile Include="src\p1\a1\p1_a2_solution.cpp" />
     <ClCompile Include="src\p278\p278_solution.cpp" />
@@ -164,6 +166,7 @@ exit 0</Command>
     <ClCompile Include="src\p3\a1\p3_a1_solution.cpp" />
     <ClCompile Include="src\p3\a2\p3_a2_solution.cpp" />
     <ClCompile Include="src\p383\a1\p383_a1_solution.cpp" />
+    <ClCompile Include="src\p476\p476_solution.cpp" />
     <ClCompile Include="src\p771\p771_solution.cpp" />
     <ClCompile Include="src\pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
@@ -172,6 +175,8 @@ exit 0</Command>
   <ItemGroup>
     <ClInclude Include="include\leetcode-cpp\common.h" />
     <ClInclude Include="include\leetcode-cpp\p1431\p1431_solution.h" />
+    <ClInclude Include="include\leetcode-cpp\p1432\p1432_solution.h" />
+    <ClInclude Include="include\leetcode-cpp\p1433\p1433_solution.h" />
     <ClInclude Include="include\leetcode-cpp\p1\a1\p1_a1_solution.h" />
     <ClInclude Include="include\leetcode-cpp\p1\a2\p1_a2_solution.h" />
     <ClInclude Include="include\leetcode-cpp\p278\p278_solution.h" />
@@ -182,6 +187,7 @@ exit 0</Command>
     <ClInclude Include="include\leetcode-cpp\p383\a3\p383_a3_solution.h" />
     <ClInclude Include="include\leetcode-cpp\p3\a2\p3_a2_solution.h" />
     <ClInclude Include="include\leetcode-cpp\p3\a1\p3_a1_solution.h" />
+    <ClInclude Include="include\leetcode-cpp\p476\p476_solution.h" />
     <ClInclude Include="include\leetcode-cpp\p771\p771_solution.h" />
     <ClInclude Include="include\leetcode-cpp\pch.h" />
   </ItemGroup>
