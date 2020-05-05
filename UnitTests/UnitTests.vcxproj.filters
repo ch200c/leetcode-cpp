@@ -60,6 +60,9 @@
     <ClCompile Include="src\p1433\p1433_test.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\p387\p387_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\UnitTests\pch.h">

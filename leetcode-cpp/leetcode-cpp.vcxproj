@@ -163,6 +163,7 @@ exit 0</Command>
     <ClCompile Include="src\p2\p2_solution.cpp" />
     <ClCompile Include="src\p383\a2\p383_a2_solution.cpp" />
     <ClCompile Include="src\p383\a3\p383_a3_solution.cpp" />
+    <ClCompile Include="src\p387\p387_solution.cpp" />
     <ClCompile Include="src\p3\a1\p3_a1_solution.cpp" />
     <ClCompile Include="src\p3\a2\p3_a2_solution.cpp" />
     <ClCompile Include="src\p383\a1\p383_a1_solution.cpp" />
@@ -185,6 +186,7 @@ exit 0</Command>
     <ClInclude Include="include\leetcode-cpp\p383\a1\p383_a1_solution.h" />
     <ClInclude Include="include\leetcode-cpp\p383\a2\p383_a2_solution.h" />
     <ClInclude Include="include\leetcode-cpp\p383\a3\p383_a3_solution.h" />
+    <ClInclude Include="include\leetcode-cpp\p387\p387_solution.h" />
     <ClInclude Include="include\leetcode-cpp\p3\a2\p3_a2_solution.h" />
     <ClInclude Include="include\leetcode-cpp\p3\a1\p3_a1_solution.h" />
     <ClInclude Include="include\leetcode-cpp\p476\p476_solution.h" />

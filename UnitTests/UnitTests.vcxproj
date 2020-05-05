@@ -168,6 +168,7 @@
     <ClCompile Include="src\p383\a1\p383_a1_test.cpp" />
     <ClCompile Include="src\p383\a2\p383_a2_test.cpp" />
     <ClCompile Include="src\p383\a3\p383_a3_test.cpp" />
+    <ClCompile Include="src\p387\p387_test.cpp" />
     <ClCompile Include="src\p3\a1\p3_a1_test.cpp" />
     <ClCompile Include="src\p3\a2\p3_a2_test.cpp" />
     <ClCompile Include="src\p476\p476_test.cpp" />
