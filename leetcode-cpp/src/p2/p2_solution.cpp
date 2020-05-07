@@ -1,5 +1,6 @@
 #include "pch.h"
 #include "leetcode-cpp/p2/p2_solution.h"
+#include "leetcode-cpp/p2/p2_list_node.h" // ListNode
 
 namespace leetcode {
 namespace p2 {

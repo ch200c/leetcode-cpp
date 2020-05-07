@@ -5,28 +5,26 @@
 namespace leetcode {
 namespace p387 {
 
-// Runtime: 124 ms (23.61 %)
-// Memory Usage: 11 MB
+// Runtime: 160 ms (16.17 %)
+// Memory Usage: 9.9 MB
 int Solution::firstUniqChar(const std::string &s) const noexcept {
 
   auto letter_to_index{std::unordered_map<char, int>()};
 
   for (auto i{0}; i < s.size(); ++i) {
     if (letter_to_index.find(s[i]) != letter_to_index.cend()) {
-      letter_to_index[s[i]] = -1;
+      ++letter_to_index[s[i]];
     } else {
-      letter_to_index[s[i]] = i;
+      letter_to_index[s[i]] = 1;
     }
   }
 
-  auto lowest_index{std::numeric_limits<int>::max()};
-  for (const auto &entry : letter_to_index) {
-    if (entry.second != -1) {
-      lowest_index = std::min(lowest_index, entry.second);
+  for (auto i{0}; i < s.size(); ++i) {
+    if (letter_to_index[s[i]] == 1) {
+      return i;
     }
   }
-
-  return lowest_index == std::numeric_limits<int>::max() ? -1 : lowest_index;
+  return -1;
 }
 
 } // namespace p387

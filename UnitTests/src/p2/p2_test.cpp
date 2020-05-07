@@ -1,6 +1,7 @@
 #include "pch.h"
 #include "CppUnitTest.h"
 #include "leetcode-cpp/p2/p2_solution.h"
+#include "leetcode-cpp/p2/p2_list_node.h"
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 

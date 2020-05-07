@@ -12,7 +12,6 @@ namespace tests
 		TEST_METHOD(test1)
 		{
 			auto solution{ leetcode::p278::Solution(4) };
-
 			auto result{ solution.firstBadVersion(5) };
 			Assert::AreEqual(4, result);
 		}

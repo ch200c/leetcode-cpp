@@ -12,4 +12,5 @@
 #include <vector>
 #include <iterator>
 #include <string>
+#include <memory>
 #endif //PCH_H

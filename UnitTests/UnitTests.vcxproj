@@ -161,6 +161,7 @@
     <ClCompile Include="src\p1431\p1431_test.cpp" />
     <ClCompile Include="src\p1432\p1432_test.cpp" />
     <ClCompile Include="src\p1433\p1433_test.cpp" />
+    <ClCompile Include="src\p169\p169_test.cpp" />
     <ClCompile Include="src\p1\a1\p1_a1_test.cpp" />
     <ClCompile Include="src\p1\a2\p1_a2_test.cpp" />
     <ClCompile Include="src\p278\p278_test.cpp" />
@@ -173,6 +174,7 @@
     <ClCompile Include="src\p3\a2\p3_a2_test.cpp" />
     <ClCompile Include="src\p476\p476_test.cpp" />
     <ClCompile Include="src\p771\p771_test.cpp" />
+    <ClCompile Include="src\p993\p993_test.cpp" />
     <ClCompile Include="src\pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
     </ClCompile>
