@@ -22,6 +22,10 @@ namespace tests
 			Assert::AreEqual(7, result->val);
 			Assert::AreEqual(0, result->next->val);
 			Assert::AreEqual(8, result->next->next->val);
+
+			Solution::delete_list(root_node1);
+            Solution::delete_list(root_node2);
+            Solution::delete_list(result);
 		}
 	};
 }

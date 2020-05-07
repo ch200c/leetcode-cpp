@@ -1,4 +1,5 @@
 #pragma once
+#include "leetcode-cpp/common.h" // LEETCODE_CPP_API
 
 namespace leetcode {
 namespace p2 {

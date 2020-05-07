@@ -1,6 +1,7 @@
 #include "pch.h"
-#include "leetcode-cpp/p2/p2_solution.h"
+
 #include "leetcode-cpp/p2/p2_list_node.h" // ListNode
+#include "leetcode-cpp/p2/p2_solution.h"
 
 namespace leetcode {
 namespace p2 {
@@ -23,6 +24,15 @@ ListNode *Solution::to_list(const std::vector<int> &digits) noexcept {
   }
 
   return root_node;
+}
+
+void Solution::delete_list(ListNode *root) noexcept {
+  auto current_node{root};
+  while (current_node) {
+    auto next{current_node->next};
+    delete current_node;
+    current_node = next;
+  }
 }
 
 // Runtime: 20 ms (98.02%)

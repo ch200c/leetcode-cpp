@@ -5,8 +5,8 @@
 namespace leetcode {
 namespace p1433 {
 
-//Runtime: 400 ms (65.84 %)
-//Memory Usage: 11.5 MB
+// Runtime: 400 ms (65.84 %)
+// Memory Usage: 11.5 MB
 bool Solution::checkIfCanBreak(std::string s1, std::string s2) const noexcept {
   std::sort(s1.begin(), s1.end());
   std::sort(s2.begin(), s2.end());
