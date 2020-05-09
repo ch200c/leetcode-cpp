@@ -154,6 +154,7 @@ exit 0</Command>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\p1232\p1232_solution.cpp" />
     <ClCompile Include="src\p1431\p1431_solution.cpp" />
     <ClCompile Include="src\p1432\p1432_solution.cpp" />
     <ClCompile Include="src\p1433\p1433_solution.cpp" />
@@ -162,6 +163,7 @@ exit 0</Command>
     <ClCompile Include="src\p1\a1\p1_a2_solution.cpp" />
     <ClCompile Include="src\p278\p278_solution.cpp" />
     <ClCompile Include="src\p2\p2_solution.cpp" />
+    <ClCompile Include="src\p367\p367_solution.cpp" />
     <ClCompile Include="src\p383\a2\p383_a2_solution.cpp" />
     <ClCompile Include="src\p383\a3\p383_a3_solution.cpp" />
     <ClCompile Include="src\p387\p387_solution.cpp" />
@@ -177,6 +179,7 @@ exit 0</Command>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\leetcode-cpp\common.h" />
+    <ClInclude Include="include\leetcode-cpp\p1232\p1232_solution.h" />
     <ClInclude Include="include\leetcode-cpp\p1431\p1431_solution.h" />
     <ClInclude Include="include\leetcode-cpp\p1432\p1432_solution.h" />
     <ClInclude Include="include\leetcode-cpp\p1433\p1433_solution.h" />
@@ -186,6 +189,7 @@ exit 0</Command>
     <ClInclude Include="include\leetcode-cpp\p278\p278_solution.h" />
     <ClInclude Include="include\leetcode-cpp\p2\p2_list_node.h" />
     <ClInclude Include="include\leetcode-cpp\p2\p2_solution.h" />
+    <ClInclude Include="include\leetcode-cpp\p367\p367_solution.h" />
     <ClInclude Include="include\leetcode-cpp\p383\a1\p383_a1_solution.h" />
     <ClInclude Include="include\leetcode-cpp\p383\a2\p383_a2_solution.h" />
     <ClInclude Include="include\leetcode-cpp\p383\a3\p383_a3_solution.h" />

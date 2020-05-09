@@ -158,6 +158,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\p1232\p1232_test.cpp" />
     <ClCompile Include="src\p1431\p1431_test.cpp" />
     <ClCompile Include="src\p1432\p1432_test.cpp" />
     <ClCompile Include="src\p1433\p1433_test.cpp" />
@@ -166,6 +167,7 @@
     <ClCompile Include="src\p1\a2\p1_a2_test.cpp" />
     <ClCompile Include="src\p278\p278_test.cpp" />
     <ClCompile Include="src\p2\p2_test.cpp" />
+    <ClCompile Include="src\p367\p367_test.cpp" />
     <ClCompile Include="src\p383\a1\p383_a1_test.cpp" />
     <ClCompile Include="src\p383\a2\p383_a2_test.cpp" />
     <ClCompile Include="src\p383\a3\p383_a3_test.cpp" />
