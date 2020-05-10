@@ -75,6 +75,9 @@
     <ClCompile Include="src\p367\p367_solution.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\p997\p997_solution.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\leetcode-cpp\common.h">
@@ -144,6 +147,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="include\leetcode-cpp\p367\p367_solution.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\leetcode-cpp\p997\p997_solution.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

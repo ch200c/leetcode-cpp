@@ -177,6 +177,7 @@
     <ClCompile Include="src\p476\p476_test.cpp" />
     <ClCompile Include="src\p771\p771_test.cpp" />
     <ClCompile Include="src\p993\p993_test.cpp" />
+    <ClCompile Include="src\p997\p997_test.cpp" />
     <ClCompile Include="src\pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
     </ClCompile>
