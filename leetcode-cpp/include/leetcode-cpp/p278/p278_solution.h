@@ -8,9 +8,10 @@ class LEETCODE_CPP_API Solution {
 public:
   Solution(int first_bad_version);
   int firstBadVersion(int n) const noexcept;
-  bool isBadVersion(int version) const noexcept;
 
 private:
+  // Fake interactive API
+  bool isBadVersion(int version) const noexcept;
   int _first_bad_version{-1};
 };
 } // namespace p278

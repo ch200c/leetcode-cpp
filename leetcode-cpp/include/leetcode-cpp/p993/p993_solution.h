@@ -10,6 +10,8 @@ struct TreeNode;
 class LEETCODE_CPP_API Solution {
 public:
   bool isCousins(TreeNode *root, int x, int y) const noexcept;
+
+private:
   std::tuple<TreeNode *, int, TreeNode *>
   find(int value, int depth, TreeNode *node, TreeNode *parent_node) const
       noexcept;
