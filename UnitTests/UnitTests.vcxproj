@@ -175,8 +175,10 @@
     <ClCompile Include="src\p3\a1\p3_a1_test.cpp" />
     <ClCompile Include="src\p3\a2\p3_a2_test.cpp" />
     <ClCompile Include="src\p476\p476_test.cpp" />
+    <ClCompile Include="src\p540\p540_test.cpp" />
     <ClCompile Include="src\p733\p733_test.cpp" />
     <ClCompile Include="src\p771\p771_test.cpp" />
+    <ClCompile Include="src\p78\p78_test.cpp" />
     <ClCompile Include="src\p993\p993_test.cpp" />
     <ClCompile Include="src\p997\p997_test.cpp" />
     <ClCompile Include="src\pch.cpp">

@@ -81,6 +81,12 @@
     <ClCompile Include="src\p733\p733_solution.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\p78\p78_solution.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\p540\p540_solution.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\leetcode-cpp\common.h">
@@ -156,6 +162,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="include\leetcode-cpp\p733\p733_solution.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\leetcode-cpp\p78\p78_solution.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\leetcode-cpp\p540\p540_solution.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

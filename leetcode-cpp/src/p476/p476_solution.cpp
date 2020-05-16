@@ -1,7 +1,6 @@
 #include "pch.h"
 
 #include "leetcode-cpp/p476/p476_solution.h"
-#include <bitset>
 
 namespace leetcode {
 namespace p476 {

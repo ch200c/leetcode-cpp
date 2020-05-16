@@ -6,10 +6,11 @@ using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 namespace tests
 {
-	TEST_CLASS(p773_test)
+	TEST_CLASS(p733_test)
 	{
 	public:
-		TEST_METHOD(test1) {
+		TEST_METHOD(test1)
+		{
 			auto solution{ leetcode::p733::Solution() };
 			auto input_image{ std::vector<std::vector<int>>{ {1,1,1},{1,1,0},{1,0,1} } };
 			auto result{ solution.floodFill(input_image, 1, 1, 2) };
